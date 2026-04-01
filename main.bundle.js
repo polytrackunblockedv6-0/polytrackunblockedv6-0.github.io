@@ -70098,8 +70098,8 @@
         }
         getLeaderboard(e, t, n, i, r) {
           let a =
-            "https://polytrack-server-production.up.railway.app/user" +
-            "leaderboard?version=0.6.0&trackId=" +
+            "https://polytrack-server-production.up.railway.app" +
+            "/leaderboard?version=0.6.0&trackId=" +
             t +
             "&skip=" +
             n.toString() +
@@ -70299,8 +70299,8 @@
         }
         getLeaderboardUserEntry(e, t, n) {
           const i =
-            "https://polytrack-server-production.up.railway.app/user" +
-            "leaderboardUserEntry?version=0.6.0&trackId=" +
+            "https://polytrack-server-production.up.railway.app" +
+            "/leaderboardUserEntry?version=0.6.0&trackId=" +
             t +
             "&userTokenHash=" +
             encodeURIComponent(e) +
@@ -70352,8 +70352,8 @@
         }
         getRecordings(e) {
           const t =
-            "https://polytrack-server-production.up.railway.app/user" +
-            "recordings?version=0.6.0&ids=" +
+            "https://polytrack-server-production.up.railway.app" +
+            "/recordings?version=0.6.0&ids=" +
             e.join(",");
           return new Promise((e, n) => {
             if (this.determinismState != Js.Ok)
@@ -70465,8 +70465,8 @@
                 c(new Error("Recording is too large"));
               else {
                 const o =
-                  "https://polytrack-server-production.up.railway.app/user" +
-                  "leaderboard";
+                  "https://polytrack-server-production.up.railway.app" +
+                  "/leaderboard";
                 let d =
                   "version=0.6.0&userToken=" +
                   encodeURIComponent(e) +
@@ -70590,7 +70590,7 @@
         submitUserProfile(e, t, n, i) {
           return new Promise((r, a) => {
             const s =
-                "https://polytrack-server-production.up.railway.app/user" + "user",
+                "https://polytrack-server-production.up.railway.app" + "/user",
               o =
                 "version=0.6.0&userToken=" +
                 encodeURIComponent(e) +
@@ -70622,8 +70622,8 @@
               s(new Error("Submit not allowed"));
             else {
               const o =
-                  "https://polytrack-server-production.up.railway.app/user" +
-                  "verifyRecordings",
+                  "https://polytrack-server-production.up.railway.app" +
+                  "/verifyRecordings",
                 l =
                   "version=0.6.0&userToken=" +
                   encodeURIComponent(e) +
@@ -70754,8 +70754,8 @@
         getUser(e) {
           return new Promise((t, n) => {
             const i =
-                "https://polytrack-server-production.up.railway.app/user" +
-                "user?version=0.6.0&userToken=" +
+                "https://polytrack-server-production.up.railway.app" +
+                "/user?version=0.6.0&userToken=" +
                 encodeURIComponent(e),
               r = new XMLHttpRequest();
             ((r.timeout = (0, C.gn)(this, wu, "f")),
@@ -70821,8 +70821,8 @@
               "WebSocket creation not allowed with non-deterministic physics",
             );
           return new WebSocket(
-            "https://polytrack-server-production.up.railway.app/user" +
-              "multiplayer/host",
+            "wss://polytrack-server-production.up.railway.app" +
+              "/multiplayer/host",
           );
         }
         createMultiplayerJoinWebSocket() {
@@ -70831,15 +70831,15 @@
               "WebSocket creation not allowed with non-deterministic physics",
             );
           return new WebSocket(
-            "https://polytrack-server-production.up.railway.app/user" +
-              "multiplayer/join",
+            "wss://polytrack-server-production.up.railway.app" +
+              "/multiplayer/join",
           );
         }
         getIceServers() {
           return new Promise((e, t) => {
             const n =
-                "https://polytrack-server-production.up.railway.app/user" +
-                "iceServers?version=0.6.0",
+                "https://polytrack-server-production.up.railway.app" +
+                "/iceServers?version=0.6.0",
               i = new XMLHttpRequest();
             ((i.timeout = (0, C.gn)(this, wu, "f")),
               i.overrideMimeType("text/plain"),
