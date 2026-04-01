@@ -70094,7 +70094,7 @@
             wu.set(this, 2e4),
             xu.set(this, 6e4),
             Su.set(this, 1e4),
-            ku.set(this, "v6/"));
+            ku.set(this, ""));
         }
         getLeaderboard(e, t, n, i, r) {
           let a =
