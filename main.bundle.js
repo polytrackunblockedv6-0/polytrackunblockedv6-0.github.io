@@ -70098,7 +70098,7 @@
         }
         getLeaderboard(e, t, n, i, r) {
           let a =
-            "https://vps.kodub.com/" +
+            "https://polytrack-server-yxjs.onrender.com/" +
             (0, C.gn)(this, ku, "f") +
             "leaderboard?version=0.6.0&trackId=" +
             t +
@@ -70300,7 +70300,7 @@
         }
         getLeaderboardUserEntry(e, t, n) {
           const i =
-            "https://vps.kodub.com/" +
+            "https://polytrack-server-yxjs.onrender.com/" +
             (0, C.gn)(this, ku, "f") +
             "leaderboardUserEntry?version=0.6.0&trackId=" +
             t +
@@ -70354,7 +70354,7 @@
         }
         getRecordings(e) {
           const t =
-            "https://vps.kodub.com/" +
+            "https://polytrack-server-yxjs.onrender.com/" +
             (0, C.gn)(this, ku, "f") +
             "recordings?version=0.6.0&ids=" +
             e.join(",");
@@ -70468,7 +70468,7 @@
                 c(new Error("Recording is too large"));
               else {
                 const o =
-                  "https://vps.kodub.com/" +
+                  "https://polytrack-server-yxjs.onrender.com/" +
                   (0, C.gn)(this, ku, "f") +
                   "leaderboard";
                 let d =
@@ -70594,7 +70594,7 @@
         submitUserProfile(e, t, n, i) {
           return new Promise((r, a) => {
             const s =
-                "https://vps.kodub.com/" + (0, C.gn)(this, ku, "f") + "user",
+                "https://polytrack-server-yxjs.onrender.com/" + (0, C.gn)(this, ku, "f") + "user",
               o =
                 "version=0.6.0&userToken=" +
                 encodeURIComponent(e) +
@@ -70626,7 +70626,7 @@
               s(new Error("Submit not allowed"));
             else {
               const o =
-                  "https://vps.kodub.com/" +
+                  "https://polytrack-server-yxjs.onrender.com/" +
                   (0, C.gn)(this, ku, "f") +
                   "verifyRecordings",
                 l =
@@ -70759,7 +70759,7 @@
         getUser(e) {
           return new Promise((t, n) => {
             const i =
-                "https://vps.kodub.com/" +
+                "https://polytrack-server-yxjs.onrender.com/" +
                 (0, C.gn)(this, ku, "f") +
                 "user?version=0.6.0&userToken=" +
                 encodeURIComponent(e),
@@ -70827,7 +70827,7 @@
               "WebSocket creation not allowed with non-deterministic physics",
             );
           return new WebSocket(
-            "https://vps.kodub.com/" +
+            "https://polytrack-server-yxjs.onrender.com/" +
               (0, C.gn)(this, ku, "f") +
               "multiplayer/host",
           );
@@ -70838,7 +70838,7 @@
               "WebSocket creation not allowed with non-deterministic physics",
             );
           return new WebSocket(
-            "https://vps.kodub.com/" +
+            "https://polytrack-server-yxjs.onrender.com/" +
               (0, C.gn)(this, ku, "f") +
               "multiplayer/join",
           );
@@ -70846,7 +70846,7 @@
         getIceServers() {
           return new Promise((e, t) => {
             const n =
-                "https://vps.kodub.com/" +
+                "https://polytrack-server-yxjs.onrender.com/" +
                 (0, C.gn)(this, ku, "f") +
                 "iceServers?version=0.6.0",
               i = new XMLHttpRequest();
