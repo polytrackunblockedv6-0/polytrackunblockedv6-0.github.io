@@ -70099,7 +70099,6 @@
         getLeaderboard(e, t, n, i, r) {
           let a =
             "https://polytrack-server-yxjs.onrender.com/" +
-            (0, C.gn)(this, ku, "f") +
             "leaderboard?version=0.6.0&trackId=" +
             t +
             "&skip=" +
@@ -70301,7 +70300,6 @@
         getLeaderboardUserEntry(e, t, n) {
           const i =
             "https://polytrack-server-yxjs.onrender.com/" +
-            (0, C.gn)(this, ku, "f") +
             "leaderboardUserEntry?version=0.6.0&trackId=" +
             t +
             "&userTokenHash=" +
@@ -70355,7 +70353,6 @@
         getRecordings(e) {
           const t =
             "https://polytrack-server-yxjs.onrender.com/" +
-            (0, C.gn)(this, ku, "f") +
             "recordings?version=0.6.0&ids=" +
             e.join(",");
           return new Promise((e, n) => {
@@ -70469,7 +70466,6 @@
               else {
                 const o =
                   "https://polytrack-server-yxjs.onrender.com/" +
-                  (0, C.gn)(this, ku, "f") +
                   "leaderboard";
                 let d =
                   "version=0.6.0&userToken=" +
@@ -70594,7 +70590,7 @@
         submitUserProfile(e, t, n, i) {
           return new Promise((r, a) => {
             const s =
-                "https://polytrack-server-yxjs.onrender.com/" + (0, C.gn)(this, ku, "f") + "user",
+                "https://polytrack-server-yxjs.onrender.com/" + "user",
               o =
                 "version=0.6.0&userToken=" +
                 encodeURIComponent(e) +
@@ -70627,7 +70623,6 @@
             else {
               const o =
                   "https://polytrack-server-yxjs.onrender.com/" +
-                  (0, C.gn)(this, ku, "f") +
                   "verifyRecordings",
                 l =
                   "version=0.6.0&userToken=" +
@@ -70760,7 +70755,6 @@
           return new Promise((t, n) => {
             const i =
                 "https://polytrack-server-yxjs.onrender.com/" +
-                (0, C.gn)(this, ku, "f") +
                 "user?version=0.6.0&userToken=" +
                 encodeURIComponent(e),
               r = new XMLHttpRequest();
@@ -70828,7 +70822,6 @@
             );
           return new WebSocket(
             "https://polytrack-server-yxjs.onrender.com/" +
-              (0, C.gn)(this, ku, "f") +
               "multiplayer/host",
           );
         }
@@ -70839,7 +70832,6 @@
             );
           return new WebSocket(
             "https://polytrack-server-yxjs.onrender.com/" +
-              (0, C.gn)(this, ku, "f") +
               "multiplayer/join",
           );
         }
@@ -70847,7 +70839,6 @@
           return new Promise((e, t) => {
             const n =
                 "https://polytrack-server-yxjs.onrender.com/" +
-                (0, C.gn)(this, ku, "f") +
                 "iceServers?version=0.6.0",
               i = new XMLHttpRequest();
             ((i.timeout = (0, C.gn)(this, wu, "f")),
